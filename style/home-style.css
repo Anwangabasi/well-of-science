@@ -1,0 +1,97 @@
+/*css reset*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*mobile view*/
+body {
+    /* font-family: 'Inter', sans-serif; */
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    background: rgba(19, 25, 27, 0.98);
+    border: 1px solid transparent;
+}
+
+.nav {
+    margin-top: 1rem;
+    padding: 0.8rem;
+}
+
+.nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    right: 0;
+}
+
+svg {
+    width: 2rem;
+    margin-top: 0.2rem;
+}
+
+svg.close {
+    display: none;
+}
+
+#nav__checkbox {
+    display: none;
+}
+
+.nav__logo {
+    margin: 0.2rem 0 0 1.5rem;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.nav__list li a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.nav__list li {
+    margin-top: 1.5em;
+    margin-left: 2em;
+    display: none;
+}
+
+button {
+    width: 220px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    background: #547A1F;
+    color: #fff;
+}
+
+#nav__checkbox:checked ~ ul.nav__list li {
+    display: block;
+}
+
+#nav__checkbox:checked ~ ul.nav__list {
+    height: 100vh;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+}
+
+
+/*desktop view*/
