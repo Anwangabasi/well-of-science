@@ -1,0 +1,56 @@
+
+
+#heroes {
+    background-image: url('../image/about/about-hero.webp');
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+p {
+    font-family: "General Sans", "General Sans Placeholder", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/* COLORS */
+
+.nigeria_green {
+    color: rgb(84, 122, 31);
+}
+
+.bluish_bg_color {
+    background-color: rgb(53, 132, 157);
+}
+
+.pinkish_bg_color {
+    background-color: rgba(201, 80, 122, 0.9);
+}
+
+/* END OF COLORS */
+
+#heroes h1 {
+    color: white !important;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+#content .section_1 {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+#story>div {
+    background-color: rgb(84, 122, 31);
+    padding: 0 25px;
+    background-image: url('../image/about/story2.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#story p {
+    text-align: left;
+}
