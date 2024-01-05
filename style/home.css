@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+body {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
 .button {
   all: unset;
   cursor: pointer;
@@ -14,9 +19,7 @@
   border-radius: 100px;
   background: #547A1F;
   color: #FFF;
-  font-family: Inter;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 20px;
 }
@@ -25,7 +28,7 @@ section.hero {
   position: relative;
   z-index: 1;
   display: flex;
-  height: 500px;
+  height: 600px;
   background-image: url('/image/home/hero.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -34,7 +37,7 @@ section.hero {
   .cube {
     position: absolute;
     right: 0;
-    top: 25%;
+    top: 23%;
   }
 
   .shade {
@@ -48,19 +51,16 @@ section.hero {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-block: auto 80px;
+    margin-block: auto 90px;
 
     .content-left {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      gap: 20px;
+      justify-content: center;
+      gap: 30px;
 
       p {
         color: #E0E0E0;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 24px;
         max-width: 359px;
@@ -78,7 +78,6 @@ section.hero {
     .content-right {
       h1 {
         max-width: 599px;
-        border: 1px solid white;
         color: #FFF;
         font-family: General Sans Variable;
         font-size: 56px;
@@ -86,6 +85,63 @@ section.hero {
         font-weight: 600;
         line-height: 70px;
         letter-spacing: -0.56px;
+
+        span {
+          color: #6FA22D;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.hero {
+    padding-inline: 40px;
+
+    .cube {
+      top: 0;
+    }
+
+    .content {
+      flex-direction: column;
+      gap: 40px;
+      margin-block-end: 70px;
+
+      .content-left {
+        order: 2;
+      }
+
+      .content-right {
+        order: 1;
+
+        h1 {
+          font-size: 52px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.hero {
+    padding-inline: 20px;
+    min-height: 800px;
+    height: auto;
+
+    .content {
+      margin-block-end: 110px;
+
+      .content-right {
+        h1 {
+          font-size: 40px;
+          line-height: 48px;
+          letter-spacing: -0.4px;
+
+          .break-for {
+            display: none;
+          }
+        }
       }
     }
   }
